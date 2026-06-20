@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Para ti ❤️</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="pantalla-inicio">
+        <h1>Tengo una sorpresa para ti...</h1>
+        <button id="btn-empezar">Toca aquí para abrirla ❤️</button>
+    </div>
+
+    <div id="pantalla-cronometro" class="oculto transparent">
+        <div class="contenedor-cronometro">
+            <h2>Tiempo Juntos ❤️</h2>
+            <p class="fecha-inicio">Desde el 18/10/2025</p> 
+            <div id="cronometro-meses" class="dato-tiempo">Cargando...</div>
+            <div id="cronometro-dias" class="dato-tiempo small">Cargando días...</div>
+            <div id="cronometro-horas" class="dato-tiempo small">Cargando horas...</div>
+            <div id="cronometro-segundos" class="dato-tiempo small">Cargando segundos...</div>
+            <div class="indicador-swipe">Desliza hacia arriba ⬆️</div>
+        </div>
+    </div>
+
+    <div id="contenido-principal" class="oculto transparent">
+        <div class="swiper mi-carrusel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/FOTO 1.jpg" alt="Foto 1">
+                    <p class="mensaje-foto">El día en el que todo comenzo</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="indicador-swipe-carrusel">Desliza ⬆️ o ⬇️ / Gestos laterales para fotos</div>
+    </div>
+
+    <div id="pantalla-galeria" class="oculto transparent">
+        <div class="contenedor-galeria">
+            <h2 class="titulo-galeria">Recuerdos del día 1</h2>
+            <div class="swiper mi-galeria">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="capa-foto"><img src="img/FOTO 2.jpg" alt="Foto 2" class="foto-galeria"></div></div>
+                    <div class="swiper-slide"><div class="capa-foto"><img src="img/FOTO 3.jpg" alt="Foto 3" class="foto-galeria"></div></div>
+                    <div class="swiper-slide"><div class="capa-foto"><img src="img/FOTO 4.jpg" alt="Foto 4" class="foto-galeria"></div></div>
+                    <div class="swiper-slide"><div class="capa-foto"><img src="img/FOTO 5.jpg" alt="Foto 5" class="foto-galeria"></div></div>
+                    <div class="swiper-slide"><div class="capa-foto"><img src="img/FOTO 6.jpg" alt="Foto 6" class="foto-galeria"></div></div>
+                    <div class="swiper-slide"><div class="capa-foto"><img src="img/FOTO 7.jpg" alt="Foto 7" class="foto-galeria"></div></div>
+                </div>
+            </div>
+            <div class="indicador-swipe" style="color: #d81b60;">Desliza hacia arriba para continuar ⬆️</div>
+        </div>
+    </div>
+
+    <div id="pantalla-mensaje" class="oculto transparent">
+        <div id="vista-sobre">
+            <h2>Toca el sobre</h2>
+            <div class="icono-sobre">💌</div>
+        </div>
+        <div id="vista-carta" class="oculto transparent">
+            <div class="papel-carta">
+                <div id="carta-p1" class="bloque-parte">
+                    <p class="texto-mensaje">
+                        Holaaa mi amor, eso de escribirte cosas pensaras que me es muuuy facil, pero nada de eso. Simepre se me complica el como empezar, luego se me ocurre algo y luego otra cosa y luego otr y otra y parece todo un enredadero jajaja. Estos ya 8 mesesotes han sido increibles amor, yo sabia el tipo de mujer eras, por eso somos novios.
+                    </p>
+                </div>
+                <div id="carta-p2" class="bloque-parte oculto">
+                    <p class="texto-mensaje">
+                        Pero con el paso de los mesos, con el paso del tiempo me voy asombrando mas de lo increible que eres, no es adjetivo, pero lamejor palabra, sonido o asi para describirte es "WOOOOW" Es que eres wow amor, de verdad que me encanta como eres, como es que sinetes las cosas, como piensas, lo divertido que eres, la ambición que tienes y las ganas de logras muchimas cosas, lo independiente que eres. Siemplemente eres WOOOW amor, te amo y te admiro muchimo.
+                    </p>
+                </div>
+                <div id="carta-p3" class="bloque-parte oculto">
+                    <p class="texto-mensaje">
+                        Gracias por estar ahi cunado lo necesito, por darme esos abrazos que hacen que me sienta seguro y como si nada me faltara. Gracias por darme eso besos que hacen que sineta cositas en el estomago. Gracias por ser asi conmigo amor. De verdad GRACIAS POR TODO MI VIDA. <br><br>
+                        Te amo como vaca amor, MUUUUUUUUUUCHO 🐄❤️
+                    </p>
+                </div>
+                <div class="navegacion-paginas">
+                    <button id="btn-carta-atras" class="btn-flecha oculto">⬅️</button>
+                    <button id="btn-carta-adelante" class="btn-flecha">➡️</button>
+                </div>
+                <div id="indicador-swipe-carta" class="indicador-swipe-barra oculto transparent">
+                    DALE SWIPE UP ⬆️
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pantalla-musica" class="oculto transparent">
+        <div class="contenedor-musica">
+            <p class="texto-musica">
+                Recuerdas que una vez me preguntaste que cancion me recordaba a ti. Mi amor, no tengo sola una cancion que me recuerde a ti. Son todas estas canciones las que me recuerdan a ti ❤️
+            </p>
+            <div class="vinilo-plataforma" id="boton-vinilo">
+                <div class="disco-vinilo"><div class="centro-vinilo">❤️</div></div>
+            </div>
+            <p class="toque-disco">Toca el disco para entrar a la biblioteca 🎵</p>
+        </div>
+        <div class="indicador-swipe" style="color: #d81b60; position: absolute; bottom: 30px;">
+            Desliza hacia arriba para ver otra sorpresa ⬆️
+        </div>
+    </div>
+
+    <div id="pantalla-estanteria" class="oculto transparent">
+        <h2 class="titulo-estanteria">Nuestra Discoteca ❤️</h2>
+        <div class="mueble-estanteria">
+            <div class="estante">
+                <div class="caratula-contenedor" data-id="0"><img src="img/DISCO1.jpg" class="img-caratula" alt="Disco 1"></div>
+                <div class="caratula-contenedor" data-id="1"><img src="img/DISCO2.jpg" class="img-caratula" alt="Disco 2"></div>
+                <div class="caratula-contenedor" data-id="2"><img src="img/DISCO3.jpg" class="img-caratula" alt="Disco 3"></div>
+            </div>
+            <div class="estante">
+                <div class="caratula-contenedor" data-id="3"><img src="img/DISCO4.jpg" class="img-caratula" alt="Disco 4"></div>
+                <div class="caratula-contenedor" data-id="4"><img src="img/DISCO5.jpg" class="img-caratula" alt="Disco 5"></div>
+                <div class="caratula-contenedor" data-id="5"><img src="img/DISCO6.jpg" class="img-caratula" alt="Disco 6"></div>
+            </div>
+            <div class="estante">
+                <div class="caratula-contenedor" data-id="6"><img src="img/DISCO7.jpg" class="img-caratula" alt="Disco 7"></div>
+                <div class="caratula-contenedor" data-id="7"><img src="img/DISCO8.jpg" class="img-caratula" alt="Disco 8"></div>
+                <div class="caratula-contenedor" data-id="8"><img src="img/DISCO9.jpg" class="img-caratula" alt="Disco 9"></div>
+            </div>
+        </div>
+        <button id="btn-volver-vinilo" class="btn-regresar-global">⬅️ Volver al Vinilo</button>
+    </div>
+
+    <div id="pantalla-detalle-cancion" class="oculto transparent">
+        <div class="tarjeta-detalle">
+            <h2 id="detalle-titulo">Título</h2>
+            <div class="caja-scroll-detalle">
+                <img id="detalle-foto" class="foto-detalle" src="" alt="Recuerdo especial">
+            </div>
+            <button id="btn-volver-estanteria" class="btn-regresar-detalle">⬅️ Volver</button>
+        </div>
+    </div>
+
+    <div id="pantalla-carrusel-3d" class="oculto transparent">
+        <h2 class="titulo-carrusel">Nuestros Momentos ❤️</h2>
+        <div class="escena-3d" id="escena-interactiva">
+            <div class="carousel-3d" id="carrusel-fotos">
+                </div>
+        </div>
+        <div class="indicador-swipe" style="color: #f8bbd0; position: absolute; bottom: 30px;">
+            Desliza ⬆️ o ⬇️
+        </div>
+    </div>
+
+    <div id="pantalla-final" class="oculto transparent">
+        <div class="contenedor-final">
+            <img src="img/FINAL.jpg" alt="Nuestra foto final" class="foto-final">
+            <p class="texto-despedida">Eres la niña que ese niño siempre imaginó y siempre quiso. Te amo muchísimo mi vida 🫶🏼</p>
+        </div>
+        <div class="indicador-swipe" style="color: #d81b60; position: absolute; bottom: 30px;">
+            Desliza hacia abajo para regresar ⬇️
+        </div>
+    </div>
+
+    <audio id="musica-fondo" loop>
+        <source src="audio/disco1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
